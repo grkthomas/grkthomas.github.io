@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap-theme.css",
+  "homepage": "https://github.com/natlittlecat/tour-seller",
+  "_release": "695c137785",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "695c13778563fb1fcf427d1ba6160cb614aef027"
+  },
+  "_source": "https://github.com/natlittlecat/tour-seller.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-theme.css",
+  "_direct": true
+}
