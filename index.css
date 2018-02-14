@@ -1,0 +1,46 @@
+
+body{ background-color: orange; height:100%; width:100%}
+
+.m2ps {margin-top: 2%}; 
+.tac { text-align: center;}
+
+.navbb { background-color: green; border-bottom: solid black; height: 15%;}
+
+.sdk_h1   { text-align: center; color: orange; }
+.sdk_h1_2 { text-align: center; font-size: 100px; margin-top: -10% }
+.sdk_h1_3 { text-align: center; font-size: 100px;  }
+
+.sdk_btn_div{height: 100px; margin: 10px 10px 10px;};
+
+.sdk_btn{
+    height: 120px; 
+    width: 120px; 
+    font-size:75px; 
+    margin: 0px 10px 0px;
+    color: white}
+
+.sdk_box1{ height:120px; margin-top: 10% }
+
+.sdk_box2{ 
+    width: auto;
+    display: inline-block;
+    border: solid; 
+    background: white 
+}
+
+.sdk_row{ margin-left: 0px; margin-right: 0px; }
+
+.sdk_text{
+    -moz-appearance: textfield;
+    border: none;
+    text-align: center;
+        
+    font-size: 40px;
+    
+    margin-left: -14px;
+    margin-right: -14px;
+
+     width: 80px;
+     height: 80px; 
+}
+
