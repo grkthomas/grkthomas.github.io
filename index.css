@@ -1,5 +1,5 @@
 
-body{ background-color: orange; height:100%; width:100%}
+body{ }
 
 .m2ps {margin-top: 2%}; 
 .tac { text-align: center;}
@@ -29,18 +29,20 @@ body{ background-color: orange; height:100%; width:100%}
 }
 
 .sdk_row{ margin-left: 0px; margin-right: 0px; }
+.sdk_ceell{width: 6vh;
+    height: 6vh; }
 
 .sdk_text{
-    -moz-appearance: textfield;
+    /*-moz-appearance: textfield;*/
     border: none;
     text-align: center;
         
-    font-size: 40px;
+    font-size: 2vh;
     
-    margin-left: -14px;
-    margin-right: -14px;
+    margin-left: -1vh;
+    margin-right: -1vh;
 
-     width: 80px;
-     height: 80px; 
+    width: 5vh;
+    height: 5vh; 
 }
 

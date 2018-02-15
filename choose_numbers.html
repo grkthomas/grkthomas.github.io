@@ -22,8 +22,11 @@
                      ng-repeat="j in $storage.indexes track by $index" 
                      ng-style="cellstyle(j,i)">
 
-                     <input type="number" class="sdk_text form-control" 
-                            ng-model="$storage.cell[j][i]">
+                     <input name="cell_{{j}}_{{i}}"
+                            class="sdk_text form-control" 
+                            ng-model="$storage.cell[j][i]"
+                            
+                            >
                                             
                 </div>
             </div>

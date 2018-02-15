@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="app">
+<head>
+    <title> Sudoku Solver </title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <script src="./bower_components/Jquery/dist/jquery.js"></script>
+    <script src="./bower_components/jquery-ui/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="./bower_components/bootstrap-theme.css/bootstrap-theme.css">
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="./bower_components/ngstorage/ngStorage.js"></script>
+
     
+    <script src="index.js"></script>
+    <script src="sudoku_Ctrl.js"></script>
+    <script src="cell_validator.js"></script>
+    <script src="router.js"></script>
 
-    <head>
-        <title> Sudoku Solver !</title>
-        <meta charset="UTF-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
-        <script src="modules/jquery.min.js"></script>
-        <script src="modules/jquery-ui.min.js"></script>
-
-        <link rel="stylesheet" href="modules/bootstrap.min.css" >
-        <link rel="stylesheet" href="modules/bootstrap-theme.min.css">
-        <script src="modules/bootstrap.min.js"></script>
-
-
-        <script src="modules/angular.min.js"></script>
-        <script src="modules/angular-ui-router.js"></script>
-        <script src="modules/ngStorage.min.js"></script>
-
-        <script src="sudoku_Ctrl.js"></script>
-        <script src="index.js"></script>
-        <script src="router.js"></script>
-
-        <link rel="stylesheet" href="index.css">    
-    </head>
-
-    <body style="background-color: orange; height:100%">
-        <nav  class="btn-success" style=" height: 15%; border-bottom:solid black">
-            <div style=" height: 15%">
-                <h1 style="text-align: center; color: white; size: 100%" > SUDOKU SOLVER </h1>
-            </div>
-        </nav>
-        <div>        
-            <div ui-view > </div>
-        </div>
-    </body>
+    <link rel="stylesheet" href="index.css">
+     
+</head>
+<body style="background-color: orange;">
+    <nav class="btn-success" style="border-bottom:solid black; height: 10vh;">
+        <h1 style="text-align: center; color: white;font-size:8vh"> SUDOKU SOLVER </h1>
+    </nav>         
+    <div ng-controller="sudokuCtrl" ui-view > </div>
     
+</body>
 </html>

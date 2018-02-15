@@ -7,6 +7,7 @@ var sudoku_Ctrl = function($q,$scope,$state,$sessionStorage)
     
     //$scope.cell=[];//$scope.type=[];//$scope.size=0;//$scope.indexes=[];
     var box_l = [],box_s = 0;
+   
     
     // VARIABLES MANAGEMENT //////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////
@@ -37,6 +38,9 @@ var sudoku_Ctrl = function($q,$scope,$state,$sessionStorage)
        
        return d.promise;
     };
+    
+     init_arrays(9);
+    
     //////////////////////////////////////////////////////////////////////////
         
     // STYLE /////////////////////////////////////////////////////////////////
@@ -63,7 +67,7 @@ var sudoku_Ctrl = function($q,$scope,$state,$sessionStorage)
         init_arrays(s).then(function(r){$state.go("sudoku.choose_numbers");});
     };
     
-    $scope.clear  = function(){init_arrays($scope.$storage.size).then(); };
-    
-    
+    $scope.clear  = function(){init_arrays($scope.$storage.size).then(); };   
 };
+
+angular.module("app").controller("sudokuCtrl",sudoku_Ctrl);
